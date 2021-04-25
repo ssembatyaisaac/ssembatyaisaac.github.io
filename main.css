@@ -8,9 +8,17 @@ body {
   min-height:100%;
   position:relative;
 }
+
+.top{
+ height: 60px;
+}
+
 .header {
   background:#ff0;
   padding:10px;
+  position:fixed;
+  top: 0;
+  height: 44px;
 }
 .content {
   padding:18px;
@@ -61,10 +69,15 @@ body {
   margin: 0;
 }
 
+.lastgap{
+  height: 45px;
+}
+
 .footer {
-  position:absolute;
+  position:fixed;
   bottom:0;
+  left: 0;
   width:100%;
-  height:60px;   /* Height of the footer */
+  height: 45px;
   background:#6cf;
 }
