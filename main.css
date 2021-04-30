@@ -41,6 +41,11 @@ body {
   text-align: center;
 }
 
+.cardlink{
+  text-decoration: none;
+  color: black;
+}
+
 .content {
   padding:18px;
   margin: 15px 10px 10px 10px;
