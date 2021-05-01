@@ -122,3 +122,13 @@ body {
   padding: 10px 30px 15px 30px;
 
 }
+
+.story{
+  font-family: Charter, Prata;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 127%;
+  align: left;
+  vertical-align: Top;
+}
