@@ -47,8 +47,12 @@ body {
 }
 
 .content {
+  margin: 0 24px;
+}
+
+.card{
   padding:18px;
-  margin: 15px 10px 10px 10px;
+  margin: 15px 0;
   background: #FFFFFF;
   mix-blend-mode: normal;
   border: 1px solid #c9c4c4;
