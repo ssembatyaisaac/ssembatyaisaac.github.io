@@ -47,7 +47,7 @@ body {
 }
 
 .title h1{
-  font-family: Prata;
+  font-family: 'Prata', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -112,7 +112,7 @@ body {
 
 .description{
   margin: 0;
-  font-family: Prata;
+  font-family: 'Prata', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -144,7 +144,7 @@ body {
 }
 
 .story{
-  font-family: Prata;
+  font-family: 'Prata', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -152,7 +152,7 @@ body {
 }
 
 .articleTitle {
-  font-family: Prata;
+  font-family: 'Prata', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
