@@ -124,11 +124,9 @@ body {
 }
 
 .story{
-  font-family: Charter, Prata;
-  font-style: Regular;
+  font-family: Prata;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  line-height: 127%;
-  align: left;
-  vertical-align: Top;
 }
