@@ -1,23 +1,71 @@
+/* variables */
+
+/*reset*/
+p,a,li{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*base styles*/
 html,
 body {
-  margin:0;
-  padding:0;
-  height:100%;
-}
-.container {
-  min-height:100%;
-  position:relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
 }
 
-.top{
- height: 50px;
+.sideBar{
+  width: 40%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
 }
 
-.header {
-  padding:10px;
-  position:fixed;
-  border: 1px solid #c9c4c4;
-  background:white;
+.sideBarNav{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+
+}
+
+.sideLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.topLinks{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sideLine{
+  border: 1px solid #c4c4c4;
+  width: 100%;
+}
+
+.topLinks a, .bottomLink a{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+  margin: 0;
+  color: #000000;
+
+}
+
+.navBar {
+  padding: 10px;
+  position: fixed;
+  border: 1px solid #C4C4C4;
+  background: white;
   top: 0;
   height: 30px;
   width: 100%;
@@ -26,17 +74,121 @@ body {
   align-items: center;
 }
 
-.header h1 {
+.navBar h1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.topdiv {
+  height: 50px;
+}
+
+.content {
+  margin: 0 20px;
+  display: flex;
+}
+
+.cardlink {
+  text-decoration: none;
+  color: black;
+}
+
+
+.card {
+  background: #faf9f9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.cardtitle,
+.author,
+.date {
+  margin: 0
+}
+
+.card-text{
+  width: 70%;
+}
+
+.card-image {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cardimage {
+  max-width: 100%;
+  max-height: 90px;
+  border-radius: 15px;
+}
+
+.cardtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  padding-right: 5px;
+}
+
+.author {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.date {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+
+  color: #B0B0B0;
+}
+
+.description {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
+  margin: 0;
+  color: #000000;
+}
+/* fonts */
+
+/* mobile styles*/
+.leftContent, .rightContent{
+  display: none;
+}
+
+.title-logo {
   width: 70%;
   display: flex;
   justify-content: center;
 }
 
-.profilepic{
+.profilePic {
   height: 100%;
 }
 
-.profilepic img {
+.profilePic img {
   max-width: 100%;
   border-radius: 50%;
 }
@@ -46,8 +198,7 @@ body {
   width: 70%;
 }
 
-.title h1{
-  font-family: 'Roboto', serif;
+.title h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -57,80 +208,18 @@ body {
   text-align: center;
 }
 
-.cardlink{
-  text-decoration: none;
-  color: black;
-}
-
-.content {
-  margin: 0 24px;
-}
-
-.card{
-  padding:18px;
-  margin: 15px 0;
-  background: #FFFFFF;
-  mix-blend-mode: normal;
-  border: 1px solid #c9c4c4;
-  border-radius: 8px;
-}
-
-.cardtitle, .author, .date {
-  margin: 0;
-}
-
-.cardtitle{
-  font-family: Prata;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.author, .date{
-  font-family: Liberation Serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 11px;
-  display: flex;
-  align-items: center;
-}
-
-.date{
-  color: rgb(163, 163, 163);
-}
-
-.cardimage {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  max-width: 100%;
-}
-
-.description{
-  margin: 0;
-  font-family: 'Roboto', serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
-}
-
-.lastgap{
+.lastgap {
   height: 45px;
 }
 
 .footer {
-  position:fixed;
-  bottom:0;
+  position: fixed;
+  bottom: 0;
   border: 1px solid #c9c4c4;
   left: 0;
-  width:100%;
+  width: 100%;
   height: 40px;
-  background:white;
+  background: white;
   display: flex;
   justify-content: space-between;
   padding-bottom: 5px;
@@ -143,8 +232,8 @@ body {
 
 }
 
-.story{
-  font-family: 'Roboto', serif;
+.story {
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -152,7 +241,7 @@ body {
 }
 
 .articleTitle {
-  font-family: 'Roboto', serif;
+
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -160,4 +249,168 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* small tablet */
+@media screen and (min-width: 620px) {
+
+  .lastgap, .footer, .leftContent, .sideBar{
+    display: none;
+  }
+
+  .navBar{
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+  }
+
+  .profilePic{
+    display: none;
+  }
+
+  .mainContent{
+    width: 75%;
+    padding: 15px;
+    /*border: 1px solid #C4C4C4;*/
+    border-top: 0;
+  }
+
+  .cardtitle{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    margin:0 0 11px;
+    color: #000000;
+  }
+
+  .description{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0;
+    color: #000000
+  }
+
+  .rightContent{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rightContent>p{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+  
+    display: flex;
+    align-items: center;
+  }
+  
+  .latestArticle{
+    width: 70%;
+    margin-bottom: 15px;
+  }
+  
+  .latestTitle{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+  
+    color: #000000;
+  }
+  
+  .latestImage img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  .latestSnippet{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+  
+    color: #000000;
+  }
+  
+  .latestLine{
+    border: 1px solid #C4C4C4;
+  }
+}
+
+/* big tablets and laptops */
+@media screen and (min-width: 960px) {
+
+  .leftContent{
+    width: 25%;
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+  
+  div.weekTale{
+    width: 70%;
+  }
+  
+  p.weekTale{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+    color: #000000;
+  }
+  
+  .weekImage img{
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  .weekTitle{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  
+    color: #000000;
+  }
+  
+  .weekSnippet{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  
+    color: #000000;
+  }
 }

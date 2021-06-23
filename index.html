@@ -6,84 +6,190 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./fontawesome/css/all.css">
   <title>Tells To Tale</title>
 </head>
 <body>
   <div class="container">
-
-    <div class="top">
-
-    </div>
-    
-    <!--header-->
-    <div class="header">
-      <div class="profilepic">
-        <img src="./img/profile.jpg" class="profilepic" alt="" srcset="">
+    <!--Side Bar-->
+    <aside class="sideBar">
+      <div class="sideBarNav">
+        <div class="profilePic">
+        <img src="./img/profile.jpg" class="profilePic" alt="" srcset="">
+        </div>
+        <button>Close</button>
       </div>
-      <h1>Tales to Tell</h1>
+      <div class="sideLinks">
+        <div class="topLinks">
+          <a href="">This Week's Tale</a>
+          <hr class="sideLine">
+          <a href="">Latest Articles</a>
+          <hr class="sideLine">
+          <a href="">Categories</a>
+          <hr class="sideLine">
+        </div>
+        <div class="bottomLink">
+          <a href="">Logout</a>
+        </div>
+      </div>
+
+    </aside>
+
+    <!--navBar-->
+    <div class="navBar">
+      <div class="profilePic">
+        <img src="./img/profile.jpg" class="profilePic" alt="" srcset="">
+      </div>
+      <div class="title-logo">
+        <h1>Tales to Tell</h1>
+      </div>
+    </div>
+
+    <!--top gap-->
+    <div class="topdiv">
+
     </div>
 
     <!-- Content-->
     <div class="content">
-      <a href="./story.html" class="cardlink">
-        <div class="card">
-          <h3 class="cardtitle">Books</h3>
-          <p class="author">Ssembatya Isaac</p>
-          <p class="date">8/15/17</p>
-          <img src="./img/books.jpg" alt="" class="cardimage">
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Rem dolore suscipit enim distinctio ea est aliquid, numquam atque delectus illo 
-            incidunt quasi quae odio! At beatae corrupti doloremque facere error.
-          </p>
+
+      <!--Left Content-->
+      <div class="leftContent">
+        <div class="weekTale">
+          <p class="weekTale" >This Week's Tale</p>
+          <div class="weekImage">
+            <img src="img/architecture.jpg" alt="" srcset="">
+          </div>
+          <div class="weekDetail">
+            <h1 class="weekTitle">Books</h1>
+            <p class="weekSnippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non lectus lacus semper consectetur a. Iaculis enim consectetur enim est port......</p>
+          </div>
         </div>
-      </a>
-
-      <div class="card">
-        <h3 class="cardtitle">Archirecture</h3>
-        <p class="author">Ssembatya Isaac</p>
-        <p class="date">8/15/17</p>
-        <img src="./img/architecture.jpg" alt="" class="cardimage">
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Rem dolore suscipit enim distinctio ea est aliquid, numquam atque delectus illo 
-          incidunt quasi quae odio! At beatae corrupti doloremque facere error.
-        </p>
       </div>
 
-      <div class="card">
-        <h3 class="cardtitle">How To install Laravel with LAMP and phpmyadmin</h3>
-        <p class="author">Ssembatya Isaac</p>
-        <p class="date">8/15/17</p>
-        <img src="./img/architecture.jpg" alt="" class="cardimage">
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Rem dolore suscipit enim distinctio ea est aliquid, numquam atque delectus illo 
-          incidunt quasi quae odio! At beatae corrupti doloremque facere error.
-        </p>
+      <!--Main Content-->
+      <div class="mainContent">
+        <div class="card">
+          <div class="card-text">
+            <h1 class="cardtitle">Books</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Rem dolore suscipit enim distinctio ea est aliquid....
+            </p>
+          </div>
+          <div class="card-image">
+            <img src="./img/books.jpg" alt="" class="cardimage">
+          </div>
+        </div>
+  
+        <a href="./story.html" class="cardlink">
+          <div class="card">
+            <div class="card-text">
+              <h3 class="cardtitle">Books</h3>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit </p>
+            </div>
+            <div class="card-image">
+              <img src="./img/books.jpg" alt="" class="cardimage">
+            </div>
+          </div>
+        </a>
+  
+        <div class="card">
+          <div class="card-text">
+            <h3 class="cardtitle">Architecture</h3>
+            
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit 
+            </p>
+          </div>
+          <div class="card-image">
+            <img src="./img/architecture.jpg" alt="" class="cardimage">
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-text">
+            <h3 class="cardtitle">How To install Laravel with LAMP and phpmyadmin</h3>           
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit 
+            </p>
+          </div>
+          <div class="card-image">
+            <img src="./img/architecture.jpg" alt="" class="cardimage">
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-text">
+            <h3 class="cardtitle">Food</h3>
+            
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit 
+            </p>
+          </div>
+          <div class="card-image">
+            <img src="./img/food.jpg" alt="" class="cardimage">
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-text">
+            <h3 class="cardtitle">Space</h3>
+            
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit 
+            </p>
+          </div>
+          <div class="card-image">
+            <img src="./img/space.jpg" alt="" class="cardimage">
+          </div>
+        </div>
       </div>
 
-      <div class="card">
-        <h3 class="cardtitle">Food</h3>
-        <p class="author">Ssembatya Isaac</p>
-        <p class="date">8/15/17</p>
-        <img src="./img/food.jpg" alt="" class="cardimage">
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Rem dolore suscipit enim distinctio ea est aliquid, numquam atque delectus illo 
-          incidunt quasi quae odio! At beatae corrupti doloremque facere error.
-        </p>
+      <!--Right Content-->
+      <div class="rightContent">
+        <p>Latest Tales</p>
+        <div class="latestArticle">
+          <div class="latestImage">
+            <img src="img/space.jpg" alt="">
+          </div>
+          <div class="latestDetail">
+            <h1 class="latestTitle">Books</h1>
+            <p class="latestSnippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non lectus lacus semper consectetur a. Iaculis enim consectetur enim est port......</p>
+          </div>
+          <hr class="latestLine">
+        </div>
+        <div class="latestArticle">
+          <div class="latestImage">
+            <img src="img/books.jpg" alt="">
+          </div>
+          <div class="latestDetail">
+            <h1 class="latestTitle">Books</h1>
+            <p class="latestSnippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non lectus lacus semper consectetur a. Iaculis enim consectetur enim est port......</p>
+          </div>
+          <hr class="latestLine">
+        </div>
+        <div class="latestArticle">
+          <div class="latestImage">
+            <img src="img/food.jpg" alt="">
+          </div>
+          <div class="latestDetail">
+            <h1 class="latestTitle">Books</h1>
+            <p class="latestSnippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non lectus lacus semper consectetur a. Iaculis enim consectetur enim est port......</p>
+          </div>
+          <hr class="latestLine">
+        </div>
+        <div class="latestArticle">
+          <div class="latestImage">
+            <img src="img/profile.jpg" alt="">
+          </div>
+          <div class="latestDetail">
+            <h1 class="latestTitle">Books</h1>
+            <p class="latestSnippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non lectus lacus semper consectetur a. Iaculis enim consectetur enim est port......</p>
+          </div>
+          <hr class="latestLine">
+        </div>
+         
       </div>
-
-      <div class="card">
-        <h3 class="cardtitle">Space</h3>
-        <p class="author">Ssembatya Isaac</p>
-        <p class="date">8/15/17</p>
-        <img src="./img/space.jpg" alt="" class="cardimage">
-        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Rem dolore suscipit enim distinctio ea est aliquid, numquam atque delectus illo 
-          incidunt quasi quae odio! At beatae corrupti doloremque facere error.
-        </p>
-      </div>
+    
     </div>
+
 
     <div class="lastgap">
       
@@ -92,7 +198,7 @@
     <!--footer-->
     <div class="footer">
       <li><i class="fas fa-home fa-lg" aria-hidden="true"></i></li>
-      <li> <i class="fa fa-layer-group fa-lg" aria-hidden="true"></i></li>
+      <li> <i class="fa fa-plus fa-lg" aria-hidden="true"></i></li>
       <li><i class="fa fa-bell fa-lg" aria-hidden="true"></i></li>
     </div>
   </div>

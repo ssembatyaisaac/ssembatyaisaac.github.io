@@ -1,0 +1,196 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar{
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.topdiv{
+  height: 50px;
+}
+
+.navBar h1 {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.content{
+  display: flex;
+}
+
+.leftContent{
+  width: 25%;
+  position: static;
+  display: flex;
+  justify-content: center;
+}
+
+div.weekTale{
+  width: 70%;
+}
+
+p.weekTale{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.weekImage img{
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.weekTitle{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+.weekSnippet{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #000000;
+
+}
+
+.mainContent{
+  width: 50%;
+  padding: 15px;
+  /*border: 1px solid #C4C4C4;*/
+  border-top: 0;
+}
+
+.article{
+  background: #F4F4F4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.articleDetail{
+  width: 70%;
+}
+
+.articleTitle{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  margin:0 0 11px;
+  color: #000000;
+
+}
+
+.articleSnippet{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  margin: 0;
+  color: #000000;
+
+}
+
+.articleImage{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.articleImage img {
+  max-width: 100%;
+  max-height: 90px;
+  border-radius: 15px;
+}
+
+.rightContent{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightContent>p{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+}
+
+.latestArticle{
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+.latestTitle{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.latestImage img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.latestSnippet{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.latestLine{
+  border: 1px solid #C4C4C4;
+}
