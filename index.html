@@ -13,12 +13,12 @@
 <body>
   <div class="container">
     <!--Side Bar-->
-    <aside class="sideBar">
+    <aside class="sideBar" id="sideMenu" style="display: none;">
       <div class="sideBarNav">
         <div class="profilePic">
         <img src="./img/profile.jpg" class="profilePic" alt="" srcset="">
         </div>
-        <button>Close</button>
+        <button onclick=closeNav()>Close</button>
       </div>
       <div class="sideLinks">
         <div class="topLinks">
@@ -33,13 +33,12 @@
           <a href="">Logout</a>
         </div>
       </div>
-
     </aside>
 
     <!--navBar-->
     <div class="navBar">
       <div class="profilePic">
-        <img src="./img/profile.jpg" class="profilePic" alt="" srcset="">
+        <img src="./img/profile.jpg" class="profilePic" alt="" srcset="" onclick=openNav()>
       </div>
       <div class="title-logo">
         <h1>Tales to Tell</h1>
@@ -202,5 +201,6 @@
       <li><i class="fa fa-bell fa-lg" aria-hidden="true"></i></li>
     </div>
   </div>
+  <script src="sidebar.js"></script>
 </body>
 </html>
